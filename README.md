@@ -53,6 +53,20 @@ A simple CI workflow is included to build the firmware with PlatformIO on push/P
 ## Upstream reference
 This project aligns to myFocuserPro2 release 338 (Oct-2024). Original project and boards documentation by Robert Brown.
 
+## Author and License / Автор и лицензия
+
+Author: Robert Brown (c) 2014-2024
+
+Date: March 19, 2014-2024
+
+All rights reserved
+
+This project is protected by International Copyright Law.
+
+Permission is granted for personal and Academic/Educational use only.
+
+Software distributed under MIT License: https://opensource.org/licenses/MIT
+
 ## Troubleshooting
 - If build fails due to missing libraries, ensure PlatformIO downloads all dependencies (see `lib_deps` in `platformio.ini`).
 - If OLED remains blank, check I2C wiring and address (default `0x3C`).
