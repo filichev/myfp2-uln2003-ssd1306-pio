@@ -523,7 +523,8 @@ void DisplayInit(void) {
   // For the OLED 128x64 1.3" display using the SSH1106 driver
   _Display->begin(&SH1106_128x64, OLED_ADDR);
 #endif  // #ifdef USE_SSH1106
-  _Display->set400kHz();
+  // Set I2C clock to 400kHz (fast mode) using Wire API to avoid deprecation
+  Wire.setClock(400000L);
   _Display->setFont(Adafruit5x7);
   _Display->clear();            // clrscr OLED
   _Display->setInvertMode(false);   // black on white
